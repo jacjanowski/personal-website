@@ -1,30 +1,21 @@
 import logo from "./logo.svg";
 import "./App.css";
 import AwesomeSlider from "react-awesome-slider";
+import { BsLinkedin } from "react-icons/bs";
+import { SocialIcon } from "react-social-icons";
 import "react-awesome-slider/dist/styles.css";
-import Fade from 'react-reveal/Fade';
-
+import Fade from "react-reveal/Fade";
 
 const slider = (
   <AwesomeSlider mobileTouch={true} bullets={false}>
-    <div className="main">
-      <div class="wrapper">
-        <header>
-          <img src="images/Mountain.png" class="background" />
-          <img src="images/Trees.png" class="foreground" />
-          <Fade bottom>
-            <h1 className="title">I'm Jacob.</h1>
-          </Fade>
-          <Fade left duration={2000}>
-          <h4 className="title">How can I help you?</h4>
-          </Fade>
-
-        </header>
-        <section>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse facilis unde illo neque at hic quisquam, nulla consectetur, itaque maxime sit iusto aliquam culpa reiciendis eaque recusandae vitae modi, animi expedita perferendis inventore. Culpa incidunt odit dicta quibusdam ullam facilis eum magnam, consectetur voluptates praesentium, pariatur eos nihil! Natus in, autem aut facere repellat eveniet commodi illo ullam hic fugit deserunt explicabo esse atque reprehenderit optio, dicta suscipit sed! Porro fugiat numquam vel magni, iure provident consequuntur velit ut quia itaque repudiandae molestiae, nobis sequi incidunt autem! Cum impedit accusamus laboriosam eaque necessitatibus consectetur incidunt a exercitationem molestias doloribus tenetur amet, ullam at repudiandae, quos reprehenderit adipisci assumenda dolor enim voluptas natus! Assumenda praesentium voluptate culpa quidem quasi impedit unde incidunt odit velit, dolore officiis distinctio, fugit, optio sed. Quos nesciunt eius reprehenderit ipsa consectetur tempora, fugiat provident corporis perspiciatis veritatis totam temporibus voluptates soluta vitae mollitia molestias reiciendis expedita doloribus est. Maxime et fugit expedita id sed cumque harum dignissimos aperiam voluptatum quos obcaecati illo tempore consectetur, sunt perferendis eius aliquid soluta praesentium voluptatem assumenda ex fuga. Iusto, possimus? Dolores deleniti eaque, aperiam consequuntur odit culpa, architecto, quas veniam provident inventore eius. Laboriosam in reprehenderit quidem? Officiis illum molestiae, praesentium velit, illo debitis quasi fuga laborum veritatis necessitatibus fugiat cupiditate! Quia animi provident maxime numquam porro itaque! Provident, rerum. Aliquid cum quo ducimus ad? Repellat nihil, saepe beatae rerum sint eveniet voluptate officiis velit autem officia tempore deserunt sequi quod quae culpa sed. Reprehenderit eveniet ipsum nihil ipsam quam facilis, possimus modi placeat ratione soluta voluptate obcaecati error minima enim, fugiat quaerat architecto, iure dignissimos a eum quidem eos at fuga. Consectetur, quisquam at reprehenderit in exercitationem inventore incidunt dolorum quos adipisci labore? Fugiat facilis ipsum minus, officiis eos modi sequi distinctio pariatur reprehenderit accusantium labore obcaecati, recusandae saepe?</section>
-      </div>
+    <div>
+      <Fade top duration={3000}>
+        <h1>About Me </h1>
+      </Fade>
     </div>
-    <div style={{ backgroundColor: 'blue' }}>2</div>
-    <div>3</div>
+    <div>
+      <Fade top>3</Fade>
+    </div>
     <div>4</div>
   </AwesomeSlider>
 );
@@ -32,8 +23,31 @@ const slider = (
 function App() {
   return (
     <>
-      {slider}
+      <div className="main">
+        <div className="wrapper">
+          <header>
+            <img src="images/Itasca.jpg" className="background" />
+            <img src="images/Trees.png" className="foreground" />
+            <Fade bottom>
+              <h1 className="title">I'm Jacob</h1>
+            </Fade>
+            <div id="socials">
+              <SocialIcon url="https://www.linkedin.com/in/jacob-janowski-uic/" />
+              <SocialIcon url="https://www.linkedin.com/in/jacob-janowski-uic/" />
+              <SocialIcon url="https://www.linkedin.com/in/jacob-janowski-uic/" />
+              <SocialIcon url="https://www.linkedin.com/in/jacob-janowski-uic/" />
+            </div>
+            <Fade left duration={2000}>
+              <div className="container">
+                <h4 className="title">Have a look around </h4>
+              </div>
+            </Fade>
 
+
+          </header>
+          {slider}
+        </div>
+      </div>
     </>
   );
 }
