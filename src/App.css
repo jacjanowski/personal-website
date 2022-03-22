@@ -5,9 +5,13 @@
     rgba(140, 140, 140, 1) 0%,
     rgba(240, 240, 241, 1) 100%
   );
+  
 }
 
+
+
 body {
+  font-family: 'Rokkitt', serif;
   margin: 0;
 }
 

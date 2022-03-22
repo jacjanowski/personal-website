@@ -10,8 +10,10 @@ const slider = (
   <AwesomeSlider mobileTouch={true} bullets={false}>
     <div>
       <Fade top duration={3000}>
-        <h1>About Me </h1>
+        <h1> About Me </h1>
+        <p style={{fontSize: 43}}>Graduate from UIC with BS in Computer Science </p>
       </Fade>
+      
     </div>
     <div>
       <Fade top>3</Fade>
@@ -31,18 +33,19 @@ function App() {
             <Fade bottom>
               <h1 className="title">I'm Jacob</h1>
             </Fade>
-            <div id="socials">
-              <SocialIcon url="https://www.linkedin.com/in/jacob-janowski-uic/" />
-              <SocialIcon url="https://www.linkedin.com/in/jacob-janowski-uic/" />
-              <SocialIcon url="https://www.linkedin.com/in/jacob-janowski-uic/" />
-              <SocialIcon url="https://www.linkedin.com/in/jacob-janowski-uic/" />
-            </div>
+
+
             <Fade left duration={2000}>
-              <div className="container">
                 <h4 className="title">Have a look around </h4>
-              </div>
             </Fade>
 
+            {/* <Fade right duration={3000}>
+              <div id="socials">
+                <SocialIcon url="https://www.linkedin.com/in/jacob-janowski-uic/" />
+                <SocialIcon url="https://github.com/jacjanowski" />
+                <SocialIcon url="https://www.instagram.com/jacobjanowski/" />
+              </div>
+            </Fade> */}
 
           </header>
           {slider}
