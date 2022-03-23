@@ -30,19 +30,18 @@ const slider = (
   <AwesomeSlider mobileTouch={true} bullets={false}>
     <div className="section">
       <Fade top duration={3000}>
-        <h1> About Me </h1>
-        <img id="me" src="images/me.jpg" />
-        <p style={{ fontSize: 43 }}>
-          {" "}
-          Graduate from UIC with BS in Computer ScienceGraduate from UIC with BS
-          in Computer ScienceGraduate from UIC with BS in Computer
-          ScienceGraduate from UIC with BS in Computer ScienceGraduate from UIC
-          with BS in Computer ScienceGraduate from UIC with BS in Computer
-          ScienceGraduate from UIC with BS in Computer ScienceGraduate from UIC
-          with BS in Computer Science{" "}
-        </p>
-      </Fade>
+        <Row>
+          <h1> About Me </h1>
 
+          <p>
+            {" "}
+            Graduate from University of Illinois at Chicago with BS in Computer
+            Science. Currently freelancing and expanding upon other side
+            projects as I am working on accepting a full-time offer as a
+            Front-End Engineer.{" "}
+          </p>
+        </Row>
+      </Fade>
       <div id="brands">
         <Fade bottom cascade duration={1000}>
           <img src={brandImages[0]} />
@@ -51,21 +50,21 @@ const slider = (
           <img src={brandImages[3]} />
         </Fade>
 
-        <Fade bottom cascade duration={2000}>
+        <Fade bottom cascade duration={2500}>
           <img src={brandImages[4]} />
           <img src={brandImages[5]} />
           <img src={brandImages[6]} />
           <img src={brandImages[7]} />
         </Fade>
 
-        <Fade bottom cascade duration={3000}>
+        <Fade bottom cascade duration={4000}>
           <img src={brandImages[8]} />
           <img src={brandImages[9]} />
           <img src={brandImages[10]} />
           <img src={brandImages[11]} />
         </Fade>
 
-        <Fade bottom cascade duration={4000}>
+        <Fade bottom cascade duration={5500}>
           <img src={brandImages[12]} />
           <img src={brandImages[13]} />
           <img src={brandImages[14]} />
@@ -90,8 +89,6 @@ const slider = (
         </Container>
       </Fade>
     </div>
-
-
 
     <div>4</div>
   </AwesomeSlider>
