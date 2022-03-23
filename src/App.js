@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import AwesomeSlider from "react-awesome-slider";
+import { Container, Row, Col } from "react-bootstrap";
 import { BsFillBootstrapFill } from "react-icons/bs";
 import { SocialIcon } from "react-social-icons";
 import "react-awesome-slider/dist/styles.css";
@@ -23,18 +24,24 @@ let brandImages = [
   "images/bootstrap.svg",
   "images/anaconda.svg",
   "images/npm.svg",
-
 ];
 
 const slider = (
   <AwesomeSlider mobileTouch={true} bullets={false}>
-    <div>
+    <div className="section">
       <Fade top duration={3000}>
         <h1> About Me </h1>
-        <p style={{ fontSize: 43 }}>Graduate from UIC with BS in Computer Science </p>
+        <img id="me" src="images/me.jpg" />
+        <p style={{ fontSize: 43 }}>
+          {" "}
+          Graduate from UIC with BS in Computer ScienceGraduate from UIC with BS
+          in Computer ScienceGraduate from UIC with BS in Computer
+          ScienceGraduate from UIC with BS in Computer ScienceGraduate from UIC
+          with BS in Computer ScienceGraduate from UIC with BS in Computer
+          ScienceGraduate from UIC with BS in Computer ScienceGraduate from UIC
+          with BS in Computer Science{" "}
+        </p>
       </Fade>
-
-      <img id='me' src="images/me.jpg" />
 
       <div id="brands">
         <Fade bottom cascade duration={1000}>
@@ -45,7 +52,6 @@ const slider = (
         </Fade>
 
         <Fade bottom cascade duration={2000}>
-
           <img src={brandImages[4]} />
           <img src={brandImages[5]} />
           <img src={brandImages[6]} />
@@ -53,7 +59,6 @@ const slider = (
         </Fade>
 
         <Fade bottom cascade duration={3000}>
-
           <img src={brandImages[8]} />
           <img src={brandImages[9]} />
           <img src={brandImages[10]} />
@@ -61,19 +66,33 @@ const slider = (
         </Fade>
 
         <Fade bottom cascade duration={4000}>
-
           <img src={brandImages[12]} />
           <img src={brandImages[13]} />
           <img src={brandImages[14]} />
           <img src={brandImages[15]} />
         </Fade>
       </div>
+    </div>
+
+    <div className="section">
+      <Fade top>
+        <Container fluid>
+          <Row>
+            <Col>1</Col>
+            <Col>2</Col>
+            <Col>3</Col>
+          </Row>
+          <Row>
+            <Col>4</Col>
+            <Col>5</Col>
+            <Col>6</Col>
+          </Row>
+        </Container>
+      </Fade>
+    </div>
 
 
-    </div>
-    <div>
-      <Fade top>3</Fade>
-    </div>
+
     <div>4</div>
   </AwesomeSlider>
 );
@@ -90,7 +109,6 @@ function App() {
               <h1 className="title">I'm Jacob</h1>
             </Fade>
 
-
             <Fade left duration={2000}>
               <h4 className="title">Have a look around </h4>
             </Fade>
@@ -102,7 +120,6 @@ function App() {
                 <SocialIcon url="https://www.instagram.com/jacobjanowski/" />
               </div>
             </Fade> */}
-
           </header>
           {slider}
         </div>
