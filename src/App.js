@@ -31,7 +31,7 @@ const slider = (
     <div className="section">
       <Fade top duration={3000}>
         <Row>
-          <h1> About Me </h1>
+          <h1> <code>{'<h1>'}</code> About Me <code>{'</h1>'}</code> </h1>
 
           <p>
             {" "}
@@ -73,60 +73,65 @@ const slider = (
       </div>
     </div>
 
-
     <div className="container">
       <div className="grid">
-
         <figure className="effect-marley">
-          <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80" alt="img11" />
+          <img src="images/history.jpg" alt="img11" />
           <figcaption>
-            <h2>"Today In <span>History"</span></h2>
-            <p>Using Wikipedia <span className="highlight">API with NodeJS & Express</span> to pull Historical data.</p>
+            <h2>
+              "Today In <span>History"</span>
+            </h2>
+            <p>
+              Using Wikipedia <span className="highlight">API</span> with{" "}
+              <span className="highlight">NodeJS & Express</span> to pull
+              Historical data.
+            </p>
             <a href="#">View more</a>
           </figcaption>
         </figure>
-
-
-
       </div>
 
       <div className="grid">
-
         <figure className="effect-marley">
-          <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80" alt="img11" />
+          <img
+            style={{ objectFit: "fill" }}
+            src="images/dare.png"
+            alt="img11"
+          />
           <figcaption>
-            <h2>D.A.R.Edu <span>NFT</span></h2>
-            <p>SPA created using <span className="highlight">React</span> to showcase their NFT on the Solana Blockchain.</p>
+            <h2>
+              D.A.R.Edu <span>NFT</span>
+            </h2>
+            <p>
+              SPA created using <span className="highlight">React</span> to
+              showcase the NFT on the Solana Blockchain.
+            </p>
             <a href="#">View more</a>
           </figcaption>
         </figure>
-
-
-
       </div>
 
       <div className="grid">
-
         <figure className="effect-marley">
           <img src="images/candy-crush.png" alt="img11" />
           <figcaption>
-            <h2>Candy Crush <span>Game</span></h2>
-            <p>Using <span className="highlight">HTML, CSS, JS</span> to recreate the Candy Crush game with use of <span className="highlight">Bootstrap & jQuery.</span> </p>
+            <h2>
+              Candy Crush <span>Game</span>
+            </h2>
+            <p>
+              Using <span className="highlight">HTML, CSS, JS</span> to recreate
+              the Candy Crush game with use of{" "}
+              <span className="highlight">Bootstrap & jQuery.</span>{" "}
+            </p>
             <a href="#">View more</a>
           </figcaption>
         </figure>
-
-
-
       </div>
     </div>
 
-
-
-
-
-
-    <div>4</div>
+    <div>
+  4
+    </div>
   </AwesomeSlider>
 );
 
@@ -151,9 +156,9 @@ function App() {
                 <SocialIcon url="https://github.com/jacjanowski" />
                 <SocialIcon url="https://www.instagram.com/jacobjanowski/" />
 
-      
-                <a id="globe" href="https://goo.gl/maps/CHQjAwXaCAKoPpUz6"><BsGlobe /></a>
-
+                <a id="globe" target={'_blank'} href="https://goo.gl/maps/FyZgZ8gyg5gjhvjWA">
+                  <BsGlobe />
+                </a>
               </div>
             </Fade>
           </header>

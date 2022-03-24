@@ -42,12 +42,12 @@
 }
 
 p {
-  font-family: "Advent Pro", sans-serif;
+  font-family: 'Comfortaa', cursive;
 }
 h1,
 h4 {
   margin: 20px 0px;
-  font-family: "DM Serif Text", serif;
+  font-family: 'Advent Pro', sans-serif;
 }
 
 #socials {
@@ -136,7 +136,7 @@ section {
 }
 
 .highlight {
-	color: pink;
+	color: rgb(255, 78, 107);
 	font-weight: 700;
 }
 .grid {
@@ -160,7 +160,7 @@ section {
   max-width: 480px;
   max-height: 360px;
   width: 48%;
-  background: #3085a3;
+  background: #0d6a8b;
   text-align: center;
   cursor: pointer;
 }
@@ -222,7 +222,9 @@ section {
 
 .grid figure p {
   letter-spacing: 1px;
-  font-size: 68.5%;
+  
+  font-size: 70%;
+  font-weight: bolder;
 }
 
 figure.effect-marley figcaption {
@@ -240,6 +242,7 @@ figure.effect-marley p {
 figure.effect-marley p {
   bottom: 30px;
   line-height: 1.5;
+  text-align: left;
   -webkit-transform: translate3d(0, 100%, 0);
   transform: translate3d(0, 100%, 0);
 }
