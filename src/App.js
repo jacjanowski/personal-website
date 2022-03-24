@@ -73,22 +73,58 @@ const slider = (
       </div>
     </div>
 
-    <div className="section">
-      <Fade top>
-        <Container fluid>
-          <Row>
-            <Col>1</Col>
-            <Col>2</Col>
-            <Col>3</Col>
-          </Row>
-          <Row>
-            <Col>4</Col>
-            <Col>5</Col>
-            <Col>6</Col>
-          </Row>
-        </Container>
-      </Fade>
+
+    <div className="container">
+      <div className="grid">
+
+        <figure className="effect-marley">
+          <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80" alt="img11" />
+          <figcaption>
+            <h2>Sweet <span>1</span></h2>
+            <p>Marley tried to convince her but she was not interested.</p>
+            <a href="#">View more</a>
+          </figcaption>
+        </figure>
+
+
+
+      </div>
+
+      <div className="grid">
+
+        <figure className="effect-marley">
+          <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80" alt="img11" />
+          <figcaption>
+            <h2>Sweet <span>1</span></h2>
+            <p>Marley tried to convince her but she was not interested.</p>
+            <a href="#">View more</a>
+          </figcaption>
+        </figure>
+
+
+
+      </div>
+
+      <div className="grid">
+
+        <figure className="effect-marley">
+          <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80" alt="img11" />
+          <figcaption>
+            <h2>Sweet <span>1</span></h2>
+            <p>Marley tried to convince her but she was not interested.</p>
+            <a href="#">View more</a>
+          </figcaption>
+        </figure>
+
+
+
+      </div>
     </div>
+
+
+
+
+
 
     <div>4</div>
   </AwesomeSlider>
