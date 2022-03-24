@@ -5,7 +5,6 @@
     rgba(140, 140, 140, 1) 0%,
     rgba(240, 240, 241, 1) 100%
   );
-  
 }
 .section {
   width: 100%;
@@ -16,7 +15,7 @@
   height: 50px;
 }
 
-.container-fluid{
+.container-fluid {
   width: 100%;
 }
 .container {
@@ -35,7 +34,7 @@
   height: auto;
 }
 
-#brands{
+#brands {
   margin: 20px 0px;
   display: flex;
   align-items: center;
@@ -43,17 +42,41 @@
 }
 
 p {
-  font-family: 'Advent Pro', sans-serif;
+  font-family: "Advent Pro", sans-serif;
 }
-h1, h4 {
+h1,
+h4 {
   margin: 20px 0px;
-  font-family: 'DM Serif Text', serif;
+  font-family: "DM Serif Text", serif;
 }
 
 #socials {
-  margin: auto;
+  /* margin: auto;
   float: right;
-  width: min-content;
+  width: min-content; */
+}
+
+a.social-icon{
+	margin: auto 10px;
+	transition: 0.3s ease-in-out;
+}
+
+a.social-icon:hover {
+	opacity: .6;
+}
+
+#socials #globe {
+	color: white;
+    display: flex;
+    float: right;
+    font-size: 42px;
+    transition: 0.3s ease-in-out;
+    align-items: center;
+}
+
+#socials #globe:hover {
+	color: rgb(119, 119, 119);
+	
 }
 
 .wrapper {
@@ -111,147 +134,153 @@ section {
 .row h1 {
   margin: 30px 0px;
 }
+
+.highlight {
+	color: pink;
+	font-weight: 700;
+}
 .grid {
   height: 400px;
-	position: relative;
-	margin: 0 auto;
-	padding: 1em 0 4em;
+  position: relative;
+  margin: 0 auto;
+  padding: 1em 0 4em;
   width: 100%;
   list-style: none;
-	text-align: center;
+  text-align: center;
+  margin: 0 10px;
 }
 
 /* Common style */
 .grid figure {
-	position: relative;
-	float: left;
-	overflow: hidden;
-	margin: 10px 1%;
-	min-width: 320px;
-	max-width: 480px;
-	max-height: 360px;
-	width: 48%;
-	background: #3085a3;
-	text-align: center;
-	cursor: pointer;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 320px;
+  max-width: 480px;
+  max-height: 360px;
+  width: 48%;
+  background: #3085a3;
+  text-align: center;
+  cursor: pointer;
 }
 
 .grid figure img {
-	position: relative;
-	display: block;
-	min-height: 100%;
-	max-width: 100%;
-	opacity: 0.8;
+  position: relative;
+  display: block;
+  min-height: 100%;
+  object-fit: cover;
+  max-width: 100%;
+  opacity: 0.8;
 }
 
 .grid figure figcaption {
-	padding: 2em;
-	color: #fff;
-	text-transform: uppercase;
-	font-size: 1.25em;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .grid figure figcaption::before,
 .grid figure figcaption::after {
-	pointer-events: none;
+  pointer-events: none;
 }
 
 .grid figure figcaption,
 .grid figure figcaption > a {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* Anchor will cover the whole item by default */
 .grid figure figcaption > a {
-	z-index: 1000;
-	text-indent: 200%;
-	white-space: nowrap;
-	font-size: 0;
-	opacity: 0;
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
 }
 
 .grid figure h2 {
-	word-spacing: -0.15em;
-	font-weight: 300;
+  word-spacing: -0.15em;
+  font-weight: 300;
 }
 
 .grid figure h2 span {
-	font-weight: 800;
+  font-weight: 800;
 }
 
 .grid figure h2,
 .grid figure p {
-	margin: 0;
+  margin: 0;
 }
 
 .grid figure p {
-	letter-spacing: 1px;
-	font-size: 68.5%;
+  letter-spacing: 1px;
+  font-size: 68.5%;
 }
 
 figure.effect-marley figcaption {
-	text-align: right;
+  text-align: right;
 }
 
 figure.effect-marley h2,
 figure.effect-marley p {
-	position: absolute;
-	right: 30px;
-	left: 30px;
-	padding: 10px 0;
+  position: absolute;
+  right: 30px;
+  left: 30px;
+  padding: 10px 0;
 }
 
-
 figure.effect-marley p {
-	bottom: 30px;
-	line-height: 1.5;
-	-webkit-transform: translate3d(0,100%,0);
-	transform: translate3d(0,100%,0);
+  bottom: 30px;
+  line-height: 1.5;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
 }
 
 figure.effect-marley h2 {
-	top: 30px;
-	-webkit-transition: -webkit-transform 0.35s;
-	transition: transform 0.35s;
-	-webkit-transform: translate3d(0,20px,0);
-	transform: translate3d(0,20px,0);
+  top: 30px;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0, 20px, 0);
+  transform: translate3d(0, 20px, 0);
 }
 
 figure.effect-marley:hover h2 {
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 figure.effect-marley h2::after {
-	position: absolute;
-	top: 100%;
-	left: 0;
-	width: 100%;
-	height: 4px;
-	background: #fff;
-	content: '';
-	-webkit-transform: translate3d(0,40px,0);
-	transform: translate3d(0,40px,0);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #fff;
+  content: "";
+  -webkit-transform: translate3d(0, 40px, 0);
+  transform: translate3d(0, 40px, 0);
 }
 
 figure.effect-marley h2::after,
 figure.effect-marley p {
-	opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
 }
 
 figure.effect-marley:hover h2::after,
 figure.effect-marley:hover p {
-	opacity: 1;
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 @media only screen and (max-width: 767px) {

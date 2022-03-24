@@ -2,7 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import AwesomeSlider from "react-awesome-slider";
 import { Container, Row, Col } from "react-bootstrap";
-import { BsFillBootstrapFill } from "react-icons/bs";
+import { BsFillBootstrapFill, BsGlobe } from "react-icons/bs";
 import { SocialIcon } from "react-social-icons";
 import "react-awesome-slider/dist/styles.css";
 import Fade from "react-reveal/Fade";
@@ -80,8 +80,8 @@ const slider = (
         <figure className="effect-marley">
           <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80" alt="img11" />
           <figcaption>
-            <h2>Sweet <span>1</span></h2>
-            <p>Marley tried to convince her but she was not interested.</p>
+            <h2>"Today In <span>History"</span></h2>
+            <p>Using Wikipedia <span className="highlight">API with NodeJS & Express</span> to pull Historical data.</p>
             <a href="#">View more</a>
           </figcaption>
         </figure>
@@ -95,8 +95,8 @@ const slider = (
         <figure className="effect-marley">
           <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80" alt="img11" />
           <figcaption>
-            <h2>Sweet <span>1</span></h2>
-            <p>Marley tried to convince her but she was not interested.</p>
+            <h2>D.A.R.Edu <span>NFT</span></h2>
+            <p>SPA created using <span className="highlight">React</span> to showcase their NFT on the Solana Blockchain.</p>
             <a href="#">View more</a>
           </figcaption>
         </figure>
@@ -108,10 +108,10 @@ const slider = (
       <div className="grid">
 
         <figure className="effect-marley">
-          <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80" alt="img11" />
+          <img src="images/candy-crush.png" alt="img11" />
           <figcaption>
-            <h2>Sweet <span>1</span></h2>
-            <p>Marley tried to convince her but she was not interested.</p>
+            <h2>Candy Crush <span>Game</span></h2>
+            <p>Using <span className="highlight">HTML, CSS, JS</span> to recreate the Candy Crush game with use of <span className="highlight">Bootstrap & jQuery.</span> </p>
             <a href="#">View more</a>
           </figcaption>
         </figure>
@@ -142,17 +142,20 @@ function App() {
               <h1 className="title">I'm Jacob</h1>
             </Fade>
 
-            <Fade left duration={2000}>
+            <Fade left delay={500} duration={2000}>
               <h4 className="title">Have a look around </h4>
             </Fade>
-
-            {/* <Fade right duration={3000}>
+            <Fade bottom delay={1500}>
               <div id="socials">
                 <SocialIcon url="https://www.linkedin.com/in/jacob-janowski-uic/" />
                 <SocialIcon url="https://github.com/jacjanowski" />
                 <SocialIcon url="https://www.instagram.com/jacobjanowski/" />
+
+      
+                <a id="globe" href="https://goo.gl/maps/CHQjAwXaCAKoPpUz6"><BsGlobe /></a>
+
               </div>
-            </Fade> */}
+            </Fade>
           </header>
           {slider}
         </div>
