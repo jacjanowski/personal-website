@@ -85,7 +85,7 @@ export default function Email() {
         </FloatingLabel>
       </>
       <FloatingLabel controlId="floatingTextarea2" label="Comments">
-        <Form.Control
+        <Form.Control id="textarea"
           as="textarea"
           placeholder="Leave a comment here"
           style={{ height: "100px" }}

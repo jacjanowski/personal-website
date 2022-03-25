@@ -37,6 +37,10 @@
   align-items: center;
 }
 
+#email-form h1 {
+  text-align: center;
+}
+
 code {
   font-size: 1em;
 }
@@ -45,6 +49,8 @@ code {
   align-items: center;
   justify-content: center;
 }
+
+
 
 .col {
   border: 1px solid black;
@@ -345,5 +351,11 @@ figure.effect-marley:hover p {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  #email-form .container {
+    margin: auto;
+    width: auto;
+    height: 75vh;
   }
 }
