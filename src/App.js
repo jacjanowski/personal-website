@@ -6,6 +6,9 @@ import { BsFillBootstrapFill, BsGlobe } from "react-icons/bs";
 import { SocialIcon } from "react-social-icons";
 import "react-awesome-slider/dist/styles.css";
 import Fade from "react-reveal/Fade";
+import Email from './Components/Email';
+import Form from 'react-bootstrap/Form'
+import FloatingLabel from 'react-bootstrap/FloatingLabel'
 
 let brandImages = [
   "images/cplusplus.svg",
@@ -73,64 +76,72 @@ const slider = (
       </div>
     </div>
 
-    <div className="container">
-      <div className="grid">
-        <figure className="effect-marley">
-          <img src="images/history.jpg" alt="img11" />
-          <figcaption>
-            <h2>
-              "Today In <span>History"</span>
-            </h2>
-            <p>
-              Using Wikipedia <span className="highlight">API</span> with{" "}
-              <span className="highlight">NodeJS & Express</span> to pull
-              Historical data.
-            </p>
-            <a href="#">View more</a>
-          </figcaption>
-        </figure>
+    <div id="projects">
+      <div>
+        <h1> <code>{'<h1>'}</code> Projects <code>{'</h1>'}</code> </h1>
       </div>
 
-      <div className="grid">
-        <figure className="effect-marley">
-          <img
-            style={{ objectFit: "fill" }}
-            src="images/dare.png"
-            alt="img11"
-          />
-          <figcaption>
-            <h2>
-              D.A.R.Edu <span>NFT</span>
-            </h2>
-            <p>
-              SPA created using <span className="highlight">React</span> to
-              showcase the NFT on the Solana Blockchain.
-            </p>
-            <a href="#">View more</a>
-          </figcaption>
-        </figure>
+      <div className="container">
+
+        <div className="grid">
+          <figure className="effect-marley">
+            <img src="images/history.jpg" alt="img11" />
+            <figcaption>
+              <h2>
+                "Today In <span>History"</span>
+              </h2>
+              <p>
+                Using Wikipedia <span className="highlight">API</span> with{" "}
+                <span className="highlight">NodeJS & Express</span> to pull
+                Historical data.
+              </p>
+              <a href="#">View more</a>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div className="grid">
+          <figure className="effect-marley">
+            <img
+              style={{ objectFit: 'fill' }}
+              src="https://cryptodailycdn.ams3.cdn.digitaloceanspaces.com/solana.png"
+              alt="img11"
+            />
+            <figcaption>
+              <h2>
+                D.A.R.Edu <span>NFT</span>
+              </h2>
+              <p>
+                SPA created using <span className="highlight">React</span> to
+                showcase the NFT on the Solana Blockchain.
+              </p>
+              <a href="#">View more</a>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div className="grid">
+          <figure className="effect-marley">
+            <img src="images/candy-crush.png" alt="img11" />
+            <figcaption>
+              <h2>
+                Candy Crush <span>Game</span>
+              </h2>
+              <p>
+                Using <span className="highlight">HTML, CSS, JS</span> to recreate
+                the Candy Crush game with use of{" "}
+                <span className="highlight">Bootstrap & jQuery.</span>{" "}
+              </p>
+              <a href="#">View more</a>
+            </figcaption>
+          </figure>
+        </div>
       </div>
 
-      <div className="grid">
-        <figure className="effect-marley">
-          <img src="images/candy-crush.png" alt="img11" />
-          <figcaption>
-            <h2>
-              Candy Crush <span>Game</span>
-            </h2>
-            <p>
-              Using <span className="highlight">HTML, CSS, JS</span> to recreate
-              the Candy Crush game with use of{" "}
-              <span className="highlight">Bootstrap & jQuery.</span>{" "}
-            </p>
-            <a href="#">View more</a>
-          </figcaption>
-        </figure>
-      </div>
     </div>
 
     <div>
-  4
+      <Email />
     </div>
   </AwesomeSlider>
 );
@@ -153,8 +164,9 @@ function App() {
             <Fade bottom delay={1500}>
               <div id="socials">
                 <SocialIcon url="https://www.linkedin.com/in/jacob-janowski-uic/" />
-                <SocialIcon url="https://github.com/jacjanowski" />
                 <SocialIcon url="https://www.instagram.com/jacobjanowski/" />
+                <SocialIcon url="https://github.com/jacjanowski" />
+
 
                 <a id="globe" target={'_blank'} href="https://goo.gl/maps/FyZgZ8gyg5gjhvjWA">
                   <BsGlobe />

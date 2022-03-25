@@ -15,8 +15,16 @@
   height: 50px;
 }
 
-.container-fluid {
+#projects div{
   width: 100%;
+}
+
+#projects div h1 {
+  text-align: center;
+}
+
+code {
+  font-size: 1em
 }
 .container {
   display: flex;
@@ -47,7 +55,7 @@ p {
 h1,
 h4 {
   margin: 20px 0px;
-  font-family: 'Advent Pro', sans-serif;
+  font-family: 'Secular One', sans-serif;
 }
 
 #socials {
@@ -117,7 +125,7 @@ header {
   font-size: 7rem;
   color: white;
   text-align: center;
-  text-shadow: 0 0 5px black;
+  text-shadow: 3px 0 8px black;
 }
 
 section {
