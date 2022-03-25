@@ -15,16 +15,30 @@
   height: 50px;
 }
 
-#projects div{
-  width: 100%;
+#projects div {
+  width: -webkit-fill-available;
 }
 
 #projects div h1 {
   text-align: center;
 }
 
+#email-form .container {
+  display: block;
+  width: 600px;
+  margin: 100px;
+  border: 1px solid green;
+}
+
+#email-form > div {
+  border: 1px solid red;
+  justify-content: center;
+  display: block;
+  align-items: center;
+}
+
 code {
-  font-size: 1em
+  font-size: 1em;
 }
 .container {
   display: flex;
@@ -50,41 +64,39 @@ code {
 }
 
 p {
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
 }
 h1,
 h4 {
   margin: 20px 0px;
-  font-family: 'Secular One', sans-serif;
+  font-family: "Secular One", sans-serif;
 }
 
-#socials {
-  /* margin: auto;
-  float: right;
-  width: min-content; */
-}
 
-a.social-icon{
-	margin: auto 10px;
-	transition: 0.3s ease-in-out;
+
+a.social-icon {
+  margin: auto 10px;
+  transition: 0.3s ease-in-out;
 }
 
 a.social-icon:hover {
-	opacity: .6;
+  opacity: 0.6;
 }
 
 #socials #globe {
-	color: white;
-    display: flex;
-    float: right;
-    font-size: 42px;
-    transition: 0.3s ease-in-out;
-    align-items: center;
+  color: white;
+  display: flex;
+  float: right;
+  height: 50px;
+  width: 50px;
+  font-size: 42px;
+  transition: 0.3s ease-in-out;
+  justify-content: center;
+  align-items: center;
 }
 
 #socials #globe:hover {
-	color: rgb(119, 119, 119);
-	
+  color: rgb(119, 119, 119);
 }
 
 .wrapper {
@@ -144,8 +156,8 @@ section {
 }
 
 .highlight {
-	color: rgb(255, 78, 107);
-	font-weight: 700;
+  color: rgb(255, 78, 107);
+  font-weight: 700;
 }
 .grid {
   height: 400px;
@@ -230,7 +242,7 @@ section {
 
 .grid figure p {
   letter-spacing: 1px;
-  
+
   font-size: 70%;
   font-weight: bolder;
 }
@@ -297,5 +309,41 @@ figure.effect-marley:hover p {
 @media only screen and (max-width: 767px) {
   .awssld {
     height: 100vh;
+  }
+
+  .form-floating {
+    width: auto;
+  }
+
+  #brands {
+    margin: 20px auto;
+    display: block;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  #projects{
+    overflow: scroll;
+  }
+
+  #projects div {
+    margin: auto;
+    display: block;
+    
+  }
+  #projects div h1 {
+    margin: 30px auto;
+  }
+
+  .section p:nth-of-type(1) {
+    font-size: 24px;
+   
+  }
+  
+  #socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

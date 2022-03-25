@@ -6,9 +6,7 @@ import { BsFillBootstrapFill, BsGlobe } from "react-icons/bs";
 import { SocialIcon } from "react-social-icons";
 import "react-awesome-slider/dist/styles.css";
 import Fade from "react-reveal/Fade";
-import Email from './Components/Email';
-import Form from 'react-bootstrap/Form'
-import FloatingLabel from 'react-bootstrap/FloatingLabel'
+import Email from "./Components/Email";
 
 let brandImages = [
   "images/cplusplus.svg",
@@ -21,7 +19,7 @@ let brandImages = [
   "images/jquery.svg",
   "images/mongodb.svg",
   "images/mysql.svg",
-  "images/npm.svg",
+  "images/react.svg",
   "images/pandas.svg",
   "images/semanticuireact.svg",
   "images/bootstrap.svg",
@@ -34,7 +32,10 @@ const slider = (
     <div className="section">
       <Fade top duration={3000}>
         <Row>
-          <h1> <code>{'<h1>'}</code> About Me <code>{'</h1>'}</code> </h1>
+          <h1>
+            {" "}
+            <code>{"<h1>"}</code> About Me <code>{"</h1>"}</code>{" "}
+          </h1>
 
           <p>
             {" "}
@@ -43,46 +44,49 @@ const slider = (
             projects as I am working on accepting a full-time offer as a
             Front-End Engineer.{" "}
           </p>
+
+          <div id="brands">
+            <Fade bottom cascade duration={1000}>
+              <img src={brandImages[0]} />
+              <img src={brandImages[1]} />
+              <img src={brandImages[2]} />
+              <img src={brandImages[3]} />
+            </Fade>
+
+            <Fade bottom cascade duration={2500}>
+              <img src={brandImages[4]} />
+              <img src={brandImages[5]} />
+              <img src={brandImages[6]} />
+              <img src={brandImages[7]} />
+            </Fade>
+
+            <Fade bottom cascade duration={4000}>
+              <img src={brandImages[8]} />
+              <img src={brandImages[9]} />
+              <img src={brandImages[10]} />
+              <img src={brandImages[11]} />
+            </Fade>
+
+            <Fade bottom cascade duration={5500}>
+              <img src={brandImages[12]} />
+              <img src={brandImages[13]} />
+              <img src={brandImages[14]} />
+              <img src={brandImages[15]} />
+            </Fade>
+          </div>
         </Row>
       </Fade>
-      <div id="brands">
-        <Fade bottom cascade duration={1000}>
-          <img src={brandImages[0]} />
-          <img src={brandImages[1]} />
-          <img src={brandImages[2]} />
-          <img src={brandImages[3]} />
-        </Fade>
-
-        <Fade bottom cascade duration={2500}>
-          <img src={brandImages[4]} />
-          <img src={brandImages[5]} />
-          <img src={brandImages[6]} />
-          <img src={brandImages[7]} />
-        </Fade>
-
-        <Fade bottom cascade duration={4000}>
-          <img src={brandImages[8]} />
-          <img src={brandImages[9]} />
-          <img src={brandImages[10]} />
-          <img src={brandImages[11]} />
-        </Fade>
-
-        <Fade bottom cascade duration={5500}>
-          <img src={brandImages[12]} />
-          <img src={brandImages[13]} />
-          <img src={brandImages[14]} />
-          <img src={brandImages[15]} />
-        </Fade>
-      </div>
     </div>
 
     <div id="projects">
       <div>
-        <h1> <code>{'<h1>'}</code> Projects <code>{'</h1>'}</code> </h1>
+        <h1>
+          {" "}
+          <code>{"<h1>"}</code> Projects <code>{"</h1>"}</code>{" "}
+        </h1>
       </div>
 
       <div className="container">
-
         <div className="grid">
           <figure className="effect-marley">
             <img src="images/history.jpg" alt="img11" />
@@ -98,12 +102,14 @@ const slider = (
               <a href="#">View more</a>
             </figcaption>
           </figure>
+
+          
         </div>
 
         <div className="grid">
           <figure className="effect-marley">
             <img
-              style={{ objectFit: 'fill' }}
+              style={{ objectFit: "fill" }}
               src="https://cryptodailycdn.ams3.cdn.digitaloceanspaces.com/solana.png"
               alt="img11"
             />
@@ -128,8 +134,8 @@ const slider = (
                 Candy Crush <span>Game</span>
               </h2>
               <p>
-                Using <span className="highlight">HTML, CSS, JS</span> to recreate
-                the Candy Crush game with use of{" "}
+                Using <span className="highlight">HTML, CSS, JS</span> to
+                recreate the Candy Crush game with use of{" "}
                 <span className="highlight">Bootstrap & jQuery.</span>{" "}
               </p>
               <a href="#">View more</a>
@@ -137,10 +143,14 @@ const slider = (
           </figure>
         </div>
       </div>
-
     </div>
 
-    <div>
+    <div id="email-form">
+      <h1>
+        {" "}
+        <code>{"<h1>"}</code> Stay In Touch <code>{"</h1>"}</code>{" "}
+      </h1>
+
       <Email />
     </div>
   </AwesomeSlider>
@@ -161,14 +171,17 @@ function App() {
             <Fade left delay={500} duration={2000}>
               <h4 className="title">Have a look around </h4>
             </Fade>
-            <Fade bottom delay={1500}>
+            <Fade bottom delay={2500}>
               <div id="socials">
                 <SocialIcon url="https://www.linkedin.com/in/jacob-janowski-uic/" />
                 <SocialIcon url="https://www.instagram.com/jacobjanowski/" />
                 <SocialIcon url="https://github.com/jacjanowski" />
 
-
-                <a id="globe" target={'_blank'} href="https://goo.gl/maps/FyZgZ8gyg5gjhvjWA">
+                <a
+                  id="globe"
+                  target={"_blank"}
+                  href="https://goo.gl/maps/FyZgZ8gyg5gjhvjWA"
+                >
                   <BsGlobe />
                 </a>
               </div>
