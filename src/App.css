@@ -23,21 +23,24 @@
   text-align: center;
 }
 
+
 #email-form .container {
   display: block;
   width: 600px;
-  margin: 100px;
-  border: 1px solid green;
+  margin: 25px;
 }
 
+
+
 #email-form > div {
-  border: 1px solid red;
-  justify-content: center;
-  display: block;
-  align-items: center;
+  border-radius: 15px;
+  border: 1px solid black;
+  background: rgb(184, 184, 184);
+  box-shadow: 0px 8px 12px black;
 }
 
 #email-form h1 {
+  margin: 1em auto;
   text-align: center;
 }
 
@@ -311,7 +314,17 @@ figure.effect-marley:hover p {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
+#alertMessage {
+  text-align: center;
+  color: green;
+  font-size: larger;
+  margin-bottom: 10px;
+}
 
+#email-form button {
+  margin: auto;
+  width: 25%;
+}
 @media only screen and (max-width: 767px) {
   .awssld {
     height: 100vh;
@@ -354,8 +367,14 @@ figure.effect-marley:hover p {
   }
 
   #email-form .container {
-    margin: auto;
+    margin: 1em auto;
     width: auto;
-    height: 75vh;
+    height: auto;
+
+  }
+
+  #email-form > div{
+    margin: auto 10px;
+    width:  -webkit-fill-available;;
   }
 }

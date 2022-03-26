@@ -3,6 +3,7 @@ import React, { useRef, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
+import Button from "react-bootstrap/Button";
 import Fade from "react-reveal/Fade";
 import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock } from "react-icons/fa";
 
@@ -68,29 +69,43 @@ export default function Email() {
   // )
 
   return (
-    <Container>
+    <Form className="container" id="email-form-id" ref={form} onSubmit={test}>
+      <Fade top>
+        {status && alertMessage}
+
+      </Fade>
+
       <>
-      <p>here ia mainre ia mainre ia mainre ia mainre ia mainre ia mainre ia mainre ia mainre ia mainre ia mainre ia mainre ia main</p>
+        <FloatingLabel className="mb-3" controlId="floatingPassword" label="Full Name">
+          <Form.Control onChange={(e) => setName(e.target.value)} value={name} name="name" type="text" placeholder="Name" required={true} />
+        </FloatingLabel>
+
+
         <FloatingLabel
           controlId="floatingInput"
           label="Email address"
           className="mb-3"
         >
-          <Form.Control type="email" placeholder="name@example.com" />
+          <Form.Control onChange={(e) => setEmail(e.target.value)} name="user_email" value={email} type="email" placeholder="name@example.com" required={true} />
 
         </FloatingLabel>
-        
-        <FloatingLabel controlId="floatingPassword" label="Password">
-          <Form.Control type="password" placeholder="Password" />
-        </FloatingLabel>
+
+
       </>
-      <FloatingLabel controlId="floatingTextarea2" label="Comments">
-        <Form.Control id="textarea"
+      <FloatingLabel className="mb-3" controlId="floatingTextarea2" label="Your message to Jacob">
+        <Form.Control
+          name="message"
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
           as="textarea"
           placeholder="Leave a comment here"
-          style={{ height: "100px" }}
+          style={{ height: "300px" }}
+          required={true}
         />
       </FloatingLabel>
-    </Container>
+
+      <Button type="submit" variant="primary">Send</Button>{' '}
+
+    </Form>
   );
 }

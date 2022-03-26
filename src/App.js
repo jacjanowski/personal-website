@@ -28,6 +28,7 @@ let brandImages = [
 ];
 
 const slider = (
+  
   <AwesomeSlider mobileTouch={true} bullets={false}>
     <div className="section">
       <Fade top duration={3000}>
@@ -165,11 +166,11 @@ function App() {
             <img src="images/Itasca.jpg" className="background" />
             <img src="images/Trees.png" className="foreground" />
             <Fade bottom>
-              <h1 className="title">I'm Jacob</h1>
+              <h1 className="title">I'm Jacob.</h1>
             </Fade>
 
             <Fade left delay={500} duration={2000}>
-              <h4 className="title">Have a look around </h4>
+              <h4 className="title">How can I help?</h4>
             </Fade>
             <Fade bottom delay={2500}>
               <div id="socials">
