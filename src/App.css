@@ -330,6 +330,10 @@ figure.effect-marley:hover p {
     height: 100vh;
   }
 
+  .title {
+    font-size: 4rem;
+  }
+
   .form-floating {
     width: auto;
   }
