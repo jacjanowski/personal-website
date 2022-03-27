@@ -15,15 +15,6 @@ export default function Email() {
 
   const form = useRef();
 
-  // Mine
-  // service_l33s7b5
-  // template_5qgy8tg
-  // user_Qk53rvtmKogW6pqRTf45w
-
-  // Harsh
-  // service_q3h1ggq
-  // template_5jtf6od
-  // 1HS9ZTxh83p7_aVwz
   const sendEmail = (e) => {
     e.preventDefault();
     setEmail("");
@@ -31,10 +22,10 @@ export default function Email() {
     setMessage("");
     emailjs
       .sendForm(
-        "service_q3h1ggq",
-        "template_5jtf6od",
-        "#contact-form",
-        "1HS9ZTxh83p7_aVwz"
+        "service_y4fye0d",
+        "template_0vc86ht",
+        "#email-form-id",
+        "Mx1yQ1vvF6iIszDkr"
       )
       .then(
         (result) => {
@@ -69,7 +60,7 @@ export default function Email() {
   // )
 
   return (
-    <Form className="container" id="email-form-id" ref={form} onSubmit={test}>
+    <Form className="container" id="email-form-id" ref={form} onSubmit={sendEmail}>
       <Fade top>
         {status && alertMessage}
 
