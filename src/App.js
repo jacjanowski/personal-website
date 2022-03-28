@@ -76,7 +76,7 @@ const slider = (
       <div>
         <h1>
           {" "}
-          <code>{"<h1>"}</code> Projects <code>{"</h1>"}</code>{" "}
+          <code>{"<h1>"}</code> Live Websites <code>{"</h1>"}</code>{" "}
         </h1>
       </div>
 
@@ -93,7 +93,12 @@ const slider = (
                 <span className="highlight">NodeJS & Express</span> to pull
                 Historical data.
               </p>
-              <a target={"_blank"} href="https://historytimeline.herokuapp.com/">View more</a>
+              <a
+                target={"_blank"}
+                href="https://historytimeline.herokuapp.com/"
+              >
+                View more
+              </a>
             </figcaption>
           </figure>
         </div>
@@ -113,7 +118,77 @@ const slider = (
                 SPA created using <span className="highlight">React</span> to
                 showcase the NFT on the Solana Blockchain.
               </p>
-              <a target={"_blank"} href="https://daredu.io/">View more</a>
+              <a target={"_blank"} href="https://daredu.io/">
+                View more
+              </a>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div className="grid">
+          <figure className="effect-marley">
+            <img src="images/gokul.png" alt="img11" />
+            <figcaption>
+              <h2>
+                Gokul <span>Wholesale</span>
+              </h2>
+              <p>
+                Website showcasing the wholesaler's products for sale using <span className="highlight">React.</span>
+              </p>
+              <a
+                target={"_blank"}
+                href="https://github.com/jacjanowski/candy-crush"
+              >
+                View more
+              </a>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div>
+        <h1>
+          {" "}
+          <code>{"<h1>"}</code> Games / Projects <code>{"</h1>"}</code>{" "}
+        </h1>
+      </div>
+
+      <div className="container">
+        <div className="grid">
+          <figure className="effect-marley">
+            <img src="images/csgo.jpg" alt="img11" />
+            <figcaption>
+              <h2>
+                CS:GO <span>Web Scraper</span>
+              </h2>
+              <p>
+                Data Science project using <span className="highlight">Python </span>that fetches data using <span className="highlight">BeautifulSoup4</span>  depending on user input. Data is turned into charts/tables via <span className="highlight">pandas & numpy</span>  used for analyzation. 
+              </p>
+              <a
+                target={"_blank"}
+                href="https://github.com/jacjanowski/CSGO_Data_Science"
+              >
+                View more
+              </a>
+            </figcaption>
+          </figure>
+        </div>
+        <div className="grid">
+          <figure className="effect-marley">
+            <img
+              style={{ objectFit: "fill" }}
+              src="images/colorGame.png"
+              alt="img11"
+            />
+            <figcaption>
+              <h2>
+                Color <span>Game</span>
+              </h2>
+              <p>
+                Simple color game that uses <span className="highlight">HTML, CSS & JS</span> to have the user find out the random generated rgb value with the corresponding colored tile. Incorporates <span className="highlight">jQuery.</span>
+              </p>
+              <a target={"_blank"} href="https://jacjanowski.github.io/colorGame/">
+                View more
+              </a>
             </figcaption>
           </figure>
         </div>
@@ -126,11 +201,16 @@ const slider = (
                 Candy Crush <span>Game</span>
               </h2>
               <p>
-                Using <span className="highlight">HTML, CSS, JS</span> to
+                Using <span className="highlight">HTML, CSS & JS</span> to
                 recreate the Candy Crush game with use of{" "}
                 <span className="highlight">Bootstrap & jQuery.</span>{" "}
               </p>
-              <a target={"_blank"} href="https://github.com/jacjanowski/candy-crush">View more</a>
+              <a
+                target={"_blank"}
+                href="https://jacjanowski.github.io/candy-crush/"
+              >
+                View more
+              </a>
             </figcaption>
           </figure>
         </div>
@@ -142,6 +222,10 @@ const slider = (
         {" "}
         <code>{"<h1>"}</code> Stay In Touch <code>{"</h1>"}</code>{" "}
       </h1>
+      <p>
+        With any questions that you may want to ask, please feel free. I'll be
+        sure to get back to you within the day.{" "}
+      </p>
 
       <Email />
     </div>
@@ -161,7 +245,7 @@ function App() {
             </Fade>
 
             <Fade left delay={500} duration={2000}>
-              <h4 className="title">How can I help?</h4>
+              <h4 className="title">Hello and welcome.</h4>
             </Fade>
             <Fade bottom delay={2500}>
               <div id="socials">
