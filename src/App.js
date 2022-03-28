@@ -127,7 +127,7 @@ const slider = (
 
         <div className="grid">
           <figure className="effect-marley">
-            <img src="images/gokul.png" alt="img11" />
+            <img src="images/gokul.PNG" alt="img11" />
             <figcaption>
               <h2>
                 Gokul <span>Wholesale</span>
@@ -137,7 +137,7 @@ const slider = (
               </p>
               <a
                 target={"_blank"}
-                href="https://github.com/jacjanowski/candy-crush"
+                href="https://gokulwholesalesinc.com/"
               >
                 View more
               </a>
@@ -176,7 +176,7 @@ const slider = (
           <figure className="effect-marley">
             <img
               style={{ objectFit: "fill" }}
-              src="images/colorGame.png"
+              src="images/colorGame.PNG"
               alt="img11"
             />
             <figcaption>
