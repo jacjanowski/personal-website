@@ -73,7 +73,7 @@ const slider = (
     </div>
 
     <div id="projects">
-      <div>
+      <div className="project-title">
         <h1>
           {" "}
           <code>{"<h1>"}</code> Live Websites <code>{"</h1>"}</code>{" "}
@@ -145,7 +145,7 @@ const slider = (
           </figure>
         </div>
       </div>
-      <div>
+      <div className="project-title">
         <h1>
           {" "}
           <code>{"<h1>"}</code> Games / Projects <code>{"</h1>"}</code>{" "}
@@ -161,7 +161,7 @@ const slider = (
                 CS:GO <span>Web Scraper</span>
               </h2>
               <p>
-                Data Science project using <span className="highlight">Python </span>that fetches data using <span className="highlight">BeautifulSoup4</span>  depending on user input. Data is turned into charts/tables via <span className="highlight">pandas & numpy</span>  used for analyzation. 
+                <span className="highlight">Python </span> program that fetches data using <span className="highlight">BeautifulSoup4</span>  depending on user input. Data is turned into charts/tables via <span className="highlight">pandas & numpy</span>  used for analyzation. 
               </p>
               <a
                 target={"_blank"}
@@ -215,6 +215,7 @@ const slider = (
           </figure>
         </div>
       </div>
+      
     </div>
 
     <div id="email-form">

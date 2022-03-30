@@ -90,7 +90,6 @@ export default function Email() {
           onChange={(e) => setMessage(e.target.value)}
           as="textarea"
           placeholder="Leave a comment here"
-          style={{ height: "300px" }}
           required={true}
         />
       </FloatingLabel>

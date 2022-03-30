@@ -36,11 +36,15 @@
 }
 
 #email-form > div {
+  
   border-radius: 25px;
+  height: -webkit-fill-available;
   background: #f0f0f0;
   box-shadow: 0px 8px 17px black;
 }
-
+#textarea {
+  height: 300px;
+}
 #email-form h1 {
   margin: 1em auto;
   text-align: center;
@@ -183,6 +187,7 @@ section {
 
 /* Common style */
 .grid figure {
+  border-radius: 15px;
   position: relative;
   float: left;
   overflow: hidden;
@@ -360,6 +365,9 @@ figure.effect-marley:hover p {
   #projects div h1 {
     margin: 30px auto;
   }
+  .project-title{
+    margin: 20px auto;
+  }
 
   .section p:nth-of-type(1) {
     font-size: 24px;
@@ -383,4 +391,52 @@ figure.effect-marley:hover p {
     margin: auto 10px;
     width:  -webkit-fill-available;;
   }
+}
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+
+
+   #email-form > div {
+     margin: 25px auto;
+   }
+
+    .grid {
+      height: 300px;
+    }
+
+    #projects div h1 {
+      font-size: 24px;
+    }
+
+    .project-title{
+      margin: 20px auto;
+    }
+
+
+}
+
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    .section p:nth-of-type(1){
+      font-size: 24px;
+    }
+
+    #email-form > div {
+      margin: 25px;
+    }
+    .section {
+      width: 75%;
+    }
+    #textarea {
+      height: 100px;
+    }
+
 }
