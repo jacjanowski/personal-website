@@ -87,6 +87,7 @@ export default function Email() {
         <Form.Control
           name="message"
           value={message}
+          
           onChange={(e) => setMessage(e.target.value)}
           as="textarea"
           placeholder="Leave a comment here"

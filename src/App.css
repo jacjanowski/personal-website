@@ -23,7 +23,6 @@
   text-align: center;
 }
 
-
 #email-form .container {
   display: block;
   width: 600px;
@@ -36,9 +35,7 @@
 }
 
 #email-form > div {
-  
   border-radius: 25px;
-  height: -webkit-fill-available;
   background: #f0f0f0;
   box-shadow: 0px 8px 17px black;
 }
@@ -58,8 +55,6 @@ code {
   align-items: center;
   justify-content: center;
 }
-
-
 
 .col {
   border: 1px solid black;
@@ -86,8 +81,6 @@ h4 {
   margin: 20px 0px;
   font-family: "Secular One", sans-serif;
 }
-
-
 
 a.social-icon {
   margin: auto 10px;
@@ -332,6 +325,10 @@ figure.effect-marley:hover p {
   margin: auto;
   width: 25%;
 }
+
+#floatingTextarea2{
+  height: 200px;
+}
 @media only screen and (max-width: 767px) {
   .awssld {
     height: 100vh;
@@ -352,28 +349,26 @@ figure.effect-marley:hover p {
     text-align: center;
     justify-content: center;
   }
-  
-  #projects{
+
+  #projects {
     overflow: scroll;
   }
 
   #projects div {
     margin: auto;
     display: block;
-    
   }
   #projects div h1 {
     margin: 30px auto;
   }
-  .project-title{
+  .project-title {
     margin: 20px auto;
   }
 
   .section p:nth-of-type(1) {
     font-size: 24px;
-   
   }
-  
+
   #socials {
     display: flex;
     justify-content: center;
@@ -384,59 +379,55 @@ figure.effect-marley:hover p {
     margin: 1em auto;
     width: auto;
     height: auto;
-
   }
 
-  #email-form > div{
+  #email-form > div {
     margin: auto 10px;
-    width:  -webkit-fill-available;;
+    width: -webkit-fill-available;
   }
 }
 
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi) { 
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  #email-form > div {
+    
+    margin: 25px auto;
+  }
 
+  
+  .grid {
+    height: 300px;
+  }
 
-   #email-form > div {
-     margin: 25px auto;
-   }
+  #projects div h1 {
+    font-size: 24px;
+  }
 
-    .grid {
-      height: 300px;
-    }
-
-    #projects div h1 {
-      font-size: 24px;
-    }
-
-    .project-title{
-      margin: 20px auto;
-    }
-
-
+  .project-title {
+    margin: 20px auto;
+  }
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .section p:nth-of-type(1) {
+    font-size: 24px;
+  }
 
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
+  #floatingTextarea2{
+    height: auto;
+  }
 
-    .section p:nth-of-type(1){
-      font-size: 24px;
-    }
+  .grid {
+    height: 200px;
+  }
 
-    #email-form > div {
-      margin: 25px;
-    }
-    .section {
-      width: 75%;
-    }
-    #textarea {
-      height: 100px;
-    }
-
+  #email-form > div {
+    height: -webkit-fill-available;
+    margin: 25px;
+  }
+  .section {
+    width: 75%;
+  }
+  #textarea {
+    height: 100px;
+  }
 }
