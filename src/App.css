@@ -258,6 +258,12 @@ section {
 
 figure.effect-marley figcaption {
   text-align: right;
+  background: transparent;
+  transition: 0.3s ease-in-out;
+}
+
+figure.effect-marley figcaption:hover {
+  background: rgba(224, 224, 224, 0.6);
 }
 
 figure.effect-marley h2,
@@ -313,6 +319,7 @@ figure.effect-marley:hover p {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
+  
 }
 #alertMessage {
   text-align: center;

@@ -133,12 +133,10 @@ const slider = (
                 Gokul <span>Wholesale</span>
               </h2>
               <p>
-                Website showcasing the wholesaler's products for sale using <span className="highlight">React.</span>
+                Website showcasing the wholesaler's products for sale using{" "}
+                <span className="highlight">React.</span>
               </p>
-              <a
-                target={"_blank"}
-                href="https://gokulwholesalesinc.com/"
-              >
+              <a target={"_blank"} href="https://gokulwholesalesinc.com/">
                 View more
               </a>
             </figcaption>
@@ -161,7 +159,11 @@ const slider = (
                 CS:GO <span>Web Scraper</span>
               </h2>
               <p>
-                <span className="highlight">Python </span> program that fetches data using <span className="highlight">BeautifulSoup4</span>  depending on user input. Data is turned into charts/tables via <span className="highlight">pandas & numpy</span>  used for analyzation. 
+                <span className="highlight">Python </span> program that fetches
+                data using <span className="highlight">BeautifulSoup4</span>{" "}
+                depending on user input. Data is turned into charts/tables via{" "}
+                <span className="highlight">pandas & numpy</span> used for
+                analyzation.
               </p>
               <a
                 target={"_blank"}
@@ -184,9 +186,16 @@ const slider = (
                 Color <span>Game</span>
               </h2>
               <p>
-                Simple color game that uses <span className="highlight">HTML, CSS & JS</span> to have the user find out the random generated rgb value with the corresponding colored tile. Incorporates <span className="highlight">jQuery.</span>
+                Simple color game that uses{" "}
+                <span className="highlight">HTML, CSS & JS</span> to have the
+                user find out the random generated rgb value with the
+                corresponding colored tile. Incorporates{" "}
+                <span className="highlight">jQuery.</span>
               </p>
-              <a target={"_blank"} href="https://jacjanowski.github.io/colorGame/">
+              <a
+                target={"_blank"}
+                href="https://jacjanowski.github.io/colorGame/"
+              >
                 View more
               </a>
             </figcaption>
@@ -215,7 +224,78 @@ const slider = (
           </figure>
         </div>
       </div>
-      
+    </div>
+
+    <div id="projects">
+      <div className="project-title">
+        <h1>
+          {" "}
+          <code>{"<h1>"}</code> Software Projects <code>{"</h1>"}</code>{" "}
+        </h1>
+      </div>
+      <div className="container">
+        <div className="grid">
+          <figure className="effect-marley">
+            <img src="images/hashing.jpg" alt="img11" />
+            <figcaption>
+              <h2 style={{ color: "#000" }}>
+                Hashing<span> (C++)</span>
+              </h2>
+              <p style={{ color: "#000" }}>
+                <span className="highlight">Hashing</span> program for specialized Illinois license plates,
+                which processes an input file of license plates and fines.
+                The output is the total fines per license plate, in sorted
+                order.
+              </p>
+              <a
+                target={"_blank"}
+                href="https://github.com/jacjanowski/Hashing"
+              >
+                View more
+              </a>
+            </figcaption>
+          </figure>
+        </div>
+        <div className="grid">
+          <figure className="effect-marley">
+            <img src="images/bst.png" alt="img11" />
+            <figcaption>
+              <h2 style={{ color: "#000" }}>
+                BST <span>(C++)</span>
+              </h2>
+              <p style={{ color: "#000" }}>
+                Inputs movies and reviews, allowing the user to search by movie
+                ID, movie Name, or review ID. Uses{" "}
+                <span className="highlight">binary search trees</span> for fast
+                search.
+              </p>
+              <a target={"_blank"} href="https://github.com/jacjanowski/BinarySearchTree">
+                View more
+              </a>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div className="grid">
+          <figure className="effect-marley">
+            <img src="images/minqueue.png" alt="img11" />
+            <figcaption>
+              <h2 style={{ color: "#000" }}>
+                Minqueue<span>(C++)</span>
+              </h2>
+              <p style={{ color: "#000" }}>
+                Min queue that stores (key, value) pairs using a{" "}
+                <span className="highlight">min-heap. </span>
+                pop have <span className="highlight">O(Log(N))</span> time
+                complexity.
+              </p>
+              <a target={"_blank"} href="https://github.com/jacjanowski/Minqueue">
+                View more
+              </a>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
     </div>
 
     <div id="email-form">
