@@ -2,6 +2,7 @@ import emailjs from "@emailjs/browser";
 import React, { useRef, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
+import { SocialIcon } from "react-social-icons";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Button from "react-bootstrap/Button";
 import Fade from "react-reveal/Fade";
@@ -60,43 +61,52 @@ export default function Email() {
   // )
 
   return (
-    <Form className="container" id="email-form-id" ref={form} onSubmit={sendEmail}>
-      <Fade top>
-        {status && alertMessage}
+    <>
+      <Form className="container" id="email-form-id" ref={form} onSubmit={sendEmail}>
+        <Fade top>
+          {status && alertMessage}
 
-      </Fade>
+        </Fade>
 
-      <>
-        <FloatingLabel className="mb-3" controlId="floatingPassword" label="Full Name">
-          <Form.Control onChange={(e) => setName(e.target.value)} value={name} name="name" type="text" placeholder="Name" required={true} />
+        <>
+          <FloatingLabel className="mb-3" controlId="floatingPassword" label="Full Name">
+            <Form.Control onChange={(e) => setName(e.target.value)} value={name} name="name" type="text" placeholder="Name" required={true} />
+          </FloatingLabel>
+
+
+          <FloatingLabel
+            controlId="floatingInput"
+            label="Email address"
+            className="mb-3"
+          >
+            <Form.Control onChange={(e) => setEmail(e.target.value)} name="user_email" value={email} type="email" placeholder="name@example.com" required={true} />
+
+          </FloatingLabel>
+
+
+        </>
+        <FloatingLabel className="mb-3" controlId="floatingTextarea2" label="Your message to Jacob">
+          <Form.Control
+            name="message"
+            value={message}
+
+            onChange={(e) => setMessage(e.target.value)}
+            as="textarea"
+            placeholder="Leave a comment here"
+            required={true}
+          />
         </FloatingLabel>
 
+        <Button type="submit" variant="primary">Send</Button>{' '}
 
-        <FloatingLabel
-          controlId="floatingInput"
-          label="Email address"
-          className="mb-3"
-        >
-          <Form.Control onChange={(e) => setEmail(e.target.value)} name="user_email" value={email} type="email" placeholder="name@example.com" required={true} />
+      </Form>
 
-        </FloatingLabel>
+      <div id="social-links">
+        <SocialIcon url="https://www.linkedin.com/in/jacob-janowski-uic/" />
+        <SocialIcon url="https://www.instagram.com/jacobjanowski/" />
+        <SocialIcon url="https://github.com/jacjanowski" />
+      </div>
 
-
-      </>
-      <FloatingLabel className="mb-3" controlId="floatingTextarea2" label="Your message to Jacob">
-        <Form.Control
-          name="message"
-          value={message}
-          
-          onChange={(e) => setMessage(e.target.value)}
-          as="textarea"
-          placeholder="Leave a comment here"
-          required={true}
-        />
-      </FloatingLabel>
-
-      <Button type="submit" variant="primary">Send</Button>{' '}
-
-    </Form>
+    </>
   );
 }

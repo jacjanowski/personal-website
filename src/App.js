@@ -143,12 +143,7 @@ const slider = (
           </figure>
         </div>
       </div>
-      <div className="project-title">
-        <h1>
-          {" "}
-          <code>{"<h1>"}</code> Games / Projects <code>{"</h1>"}</code>{" "}
-        </h1>
-      </div>
+
 
       <div className="container">
         <div className="grid">

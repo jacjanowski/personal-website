@@ -26,7 +26,14 @@
 #email-form .container {
   display: block;
   width: 600px;
-  margin: 25px;
+  margin: auto;
+}
+
+#email-form #social-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 #email-form p {
@@ -50,6 +57,7 @@
 code {
   font-size: 1em;
 }
+
 .container {
   display: flex;
   align-items: center;
@@ -260,10 +268,12 @@ figure.effect-marley figcaption {
   text-align: right;
   background: transparent;
   transition: 0.3s ease-in-out;
+  
 }
 
 figure.effect-marley figcaption:hover {
-  background: rgba(224, 224, 224, 0.6);
+  
+  background: rgba(199, 198, 198, 0.753);
 }
 
 figure.effect-marley h2,
@@ -361,6 +371,7 @@ figure.effect-marley:hover p {
     overflow: scroll;
   }
 
+
   #projects div {
     margin: auto;
     display: block;
@@ -400,6 +411,9 @@ figure.effect-marley:hover p {
     margin: 25px auto;
   }
 
+  #projects .container {
+    margin: 10px auto;
+  }
   
   .grid {
     height: 300px;
