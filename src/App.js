@@ -76,7 +76,7 @@ const slider = (
       <div className="project-title">
         <h1>
           {" "}
-          <code>{"<h1>"}</code> Live Websites <code>{"</h1>"}</code>{" "}
+          <code>{"<h1>"}</code> Live Websites / Game Projects <code>{"</h1>"}</code>{" "}
         </h1>
       </div>
 
@@ -127,16 +127,15 @@ const slider = (
 
         <div className="grid">
           <figure className="effect-marley">
-            <img src="images/gokul.PNG" alt="img11" />
+            <img src="images/blog.webp" alt="img11" />
             <figcaption>
               <h2>
-                Gokul <span>Wholesale</span>
+                REST <span>API</span>
               </h2>
               <p>
-                Website showcasing the wholesaler's products for sale using{" "}
-                <span className="highlight">React.</span>
+                <span className="highlight">REST API</span> website that allows users to make blog posts or write articles. CRUD features using <span className="highlight">NodeJS & Express</span>  to store data with use of <span className="highlight">MongoDB</span>.
               </p>
-              <a target={"_blank"} href="https://gokulwholesalesinc.com/">
+              <a target={"_blank"} href="https://fullstackprojectapp.herokuapp.com/">
                 View more
               </a>
             </figcaption>
@@ -281,7 +280,7 @@ const slider = (
               <p style={{ color: "#000" }}>
                 Min queue that stores (key, value) pairs using a{" "}
                 <span className="highlight">min-heap. </span>
-                pop have <span className="highlight">O(Log(N))</span> time
+                Functions have <span className="highlight">O(Log(N))</span> time
                 complexity.
               </p>
               <a target={"_blank"} href="https://github.com/jacjanowski/Minqueue">
